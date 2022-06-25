@@ -101,3 +101,61 @@ input {
     font-weight: 600;
 }
 
+@media (min-width: 576px) {
+    .container {
+        padding: 2rem 5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem 10rem;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-image: url('img/bg-intro-desktop.png');
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 10rem;
+    }
+
+    .row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .col-md-6 {
+        flex-basis: 48%;
+        padding-top: 0;
+    }
+
+    .col-md-6:nth-child(1) {
+        text-align: left;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 54px;
+        margin-bottom: 2rem;
+        line-height: 3.5rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    input {
+        padding: 16px 36px;
+    }
+}
